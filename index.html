@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Vazab's personal site">
+    <meta name="author" content="Vazab">
+    <title>Vazab's Site</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,400" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="datecalc container__datecalc">
+            <div class="datecalc__wrapper-date1 cp-r1c1 ca-f">
+                <div class="datecalc__datelabel">Date1</div>
+                <button class="button button--small datecalc__button-now" onclick="setCurrentDate()">now</button>
+            </div>
+            <button class="button button--small datecalc__button-clear-dates cp-r1c2 ca-8" onclick="clearInputDates()">clear</button>
+            <div class="datecalc__datelabel cp-r1c3 ca-7">Date2</div>
+            <input type="text" class="input-text cp-r2c1" id="input-date1">
+            <div class="result-text cp-r2c2 ca-5" id="result-of-diff">result of diff</div>
+            <input type="text" class="input-text cp-r2c3" id="input-date2">
+            <div class="datecalc__plus cp-r3c1 ca-5">+</div>
+            <button class="button button--green cp-r3c2 ca-2" onclick="getDateDiff()">Diff</button>
+            <div class="tip-format cp-r3c3-r4">Format:<br>YYYY-MM-DD HH24:MI:SS
+                <br><br>2020-10-20 20:50:50<br>2020-10-20 20:50<br>2020-10-20
+            </div>
+            <div class="datecalc__adder cp-r4c1">
+                <div class="datecalc__dhm-text cp-r1c1">Days</div>
+                <div class="datecalc__dhm-text cp-r1c2">Hours</div>
+                <div class="datecalc__dhm-text cp-r1c3">Minutes</div>
+                <input type="text" class="datecalc__dhm-input-text input-text cp-r2c1" id="input-days">
+                <input type="text" class="datecalc__dhm-input-text input-text cp-r2c2" id="input-hours">
+                <input type="text" class="datecalc__dhm-input-text input-text cp-r2c3" id="input-minutes">
+            </div>
+            <button class="button button--green datecalc__button-sum cp-r4c2 ca-7" onclick="addTime()">SUM</button>
+            <div class="result-text cp-r5c1 ca-5" id="result-of-add">result of sum</div>
+            <button class="button button--small cp-r5c2 ca-4" onclick="clearAddValues()">clear</button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

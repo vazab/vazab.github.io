@@ -1,0 +1,50 @@
+/* cp = cellpops r = row c = column */
+.cp-r1c1 { grid-row: 1; grid-column: 1; }
+.cp-r1c2 { grid-row: 1; grid-column: 2; }
+.cp-r1c3 { grid-row: 1; grid-column: 3; }
+.cp-r1c4 { grid-row: 1; grid-column: 4; }
+.cp-r1c5 { grid-row: 1; grid-column: 5; }
+
+.cp-r2c1 { grid-row: 2; grid-column: 1; }
+.cp-r2c2 { grid-row: 2; grid-column: 2; }
+.cp-r2c3 { grid-row: 2; grid-column: 3; }
+.cp-r2c4 { grid-row: 2; grid-column: 4; }
+.cp-r2c5 { grid-row: 2; grid-column: 5; }
+
+.cp-r3c1 { grid-row: 3; grid-column: 1; }
+.cp-r3c2 { grid-row: 3; grid-column: 2; }
+.cp-r3c3 { grid-row: 3; grid-column: 3; }
+.cp-r3c4 { grid-row: 3; grid-column: 4; }
+.cp-r3c5 { grid-row: 3; grid-column: 5; }
+
+.cp-r4c1 { grid-row: 4; grid-column: 1; }
+.cp-r4c2 { grid-row: 4; grid-column: 2; }
+.cp-r4c3 { grid-row: 4; grid-column: 3; }
+.cp-r4c4 { grid-row: 4; grid-column: 4; }
+.cp-r4c5 { grid-row: 4; grid-column: 5; }
+
+.cp-r5c1 { grid-row: 5; grid-column: 1; }
+.cp-r5c2 { grid-row: 5; grid-column: 2; }
+.cp-r5c3 { grid-row: 5; grid-column: 3; }
+.cp-r5c4 { grid-row: 5; grid-column: 4; }
+.cp-r5c5 { grid-row: 5; grid-column: 5; }
+
+.cp-r3c3-r4 { grid-row: 3 / 5; grid-column: 3; }
+
+/* ca = cellalign f = fill */
+.ca-1 { justify-self: start; align-self: start; }
+.ca-2 { justify-self: center; align-self: start; }
+.ca-3 { justify-self: end; align-self: start; }
+.ca-4 { justify-self: start; align-self: center; }
+.ca-5 { justify-self: center; align-self: center; }
+.ca-6 { justify-self: end; align-self: center; }
+.ca-7 { justify-self: start; align-self: end; }
+.ca-8 { justify-self: center; align-self: end; }
+.ca-9 { justify-self: end; align-self: end; }
+.ca-f { justify-self: stretch; align-self: stretch; }
+.ca-f-r1 { justify-self: stretch; align-self: start; }
+.ca-f-r2 { justify-self: stretch; align-self: center; }
+.ca-f-r3 { justify-self: stretch; align-self: end; }
+.ca-f-с1 { justify-self: start; align-self: stretch; }
+.ca-f-с2 { justify-self: center; align-self: stretch; }
+.ca-f-с3 { justify-self: end; align-self: stretch; }

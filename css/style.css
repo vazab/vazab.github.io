@@ -1,0 +1,119 @@
+@import url('cellpositions.css');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+
+.input-text {
+    width: 100%;
+    padding: 8px 8px;
+}
+
+.button {
+    font-size: 16;
+    height: 40px;
+    padding: 0px 20px;
+    background-color: rgb(245, 245, 245);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0px 2px 3px 0px rgba(128, 128, 128, 0.2);
+}
+.button:hover {
+    background-color: rgb(220, 220, 220);
+}
+.button:active {
+    background-color: rgb(220, 220, 220);
+    box-shadow: 0px 1px 3px 0px rgba(128, 128, 128, 0.4);
+    transform: translateY(2px);
+}
+
+.button--green {
+    background-color: rgb(4, 170, 109);
+    border: 1px solid rgba(3, 112, 72, 0.1);
+    color: white;
+    box-shadow: 0px 2px 3px 0px rgba(0, 99, 44, 0.2);
+}
+.button--green:hover {
+    background-color: rgb(0, 155, 98);
+}
+.button--green:active{
+    background-color: rgb(0, 128, 81);
+    box-shadow: 0px 1px 3px 0px rgba(0, 99, 44, 0.4);
+    transform: translateY(2px);
+}
+
+.button--small {
+    padding: 0px 8px;
+    font-size: 14px;
+    height: 32px;
+    min-width: 32px;
+}
+
+.container__datecalc {
+    margin: 40px auto 0px auto;
+}
+
+.datecalc {
+    display: grid;
+    background-color: rgb(255, 255, 255);
+    width: 600px;
+    padding: 8px 16px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    
+    grid-template: minmax(40px, auto) / 1.5fr 1fr 1.5fr;
+    grid-auto-rows: minmax(40px, auto);
+    place-items: start start;
+}
+
+.datecalc__wrapper-date1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.datecalc__button-clear-dates {
+    margin-bottom: 8px;
+}
+
+.datecalc__datelabel {
+    padding-bottom: 8px;
+}
+
+.datecalc__button-now {
+    margin-bottom: 8px;
+}
+
+.result-text {
+    text-transform: uppercase;
+}
+
+.datecalc__plus {
+    font-size: 28px;
+    line-height: 20px;
+    padding: 8px 0px;
+}
+
+.tip-format {
+    font-size: 12px;
+    color: rgba(25, 25, 25, 0.75);
+    padding-top: 8px;
+}
+
+.datecalc__adder {
+    display: grid;
+    place-items: center center;
+    grid-template: minmax(16px, auto) minmax(40px, auto) / repeat(3, 1fr);
+}
+
+.datecalc__dhm-text {
+    padding-bottom: 4px;
+}
+
+.datecalc__dhm-input-text {
+    width: 80%;
+}
