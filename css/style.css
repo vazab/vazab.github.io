@@ -1,4 +1,5 @@
 @import url('cellpositions.css');
+@import url('bg-grid.css');
 
 * {
     box-sizing: border-box;

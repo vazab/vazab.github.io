@@ -1,0 +1,55 @@
+body {
+    --base-color: #f2f2f2;
+    
+    --line-color: rgba(0, 0, 0, 0.05);
+    --line-thick: 2px;
+    --line: var(--line-color) var(--line-thick), transparent var(--line-thick);
+    
+    --outline: var(--line-color) var(--line-thick), transparent var(--line-thick);
+    
+    --angle-color: #b3b3b3;
+    --angle-length: 3px;
+    --angle-thick: var(--line-thick);
+    --angle: var(--angle-color) var(--angle-thick), transparent var(--angle-thick);
+    
+    --cell-line-size: 32px;
+    --cell-outline-size: 128px;
+    
+    --overlap-start:
+        transparent calc(var(--line-thick) + var(--angle-length)),
+        var(--base-color) calc(var(--line-thick) + var(--angle-length));
+    --overlap-end:
+        var(--base-color) calc(var(--cell-outline-size) - var(--angle-length)),
+        transparent calc(var(--cell-outline-size) - var(--angle-length));
+    --overlap: var(--overlap-start), var(--overlap-end);
+  
+    background:
+        linear-gradient(90deg, var(--line)),
+        linear-gradient(var(--line)),
+    
+        linear-gradient(90deg, var(--outline)),
+        linear-gradient(var(--outline)),
+    
+        linear-gradient(var(--overlap)),
+        linear-gradient(90deg, var(--overlap)),
+        
+        linear-gradient(90deg, var(--angle)),
+        linear-gradient(var(--angle)),
+    
+        var(--base-color);
+    
+    background-size:
+        var(--cell-line-size) 1px,
+        1px var(--cell-line-size),
+        
+        var(--cell-outline-size) 1px,
+        1px var(--cell-outline-size),
+        
+        1px var(--cell-outline-size),
+        var(--cell-outline-size) 1px,
+        
+        var(--cell-outline-size) 1px,
+        1px var(--cell-outline-size);
+    
+    background-position: -1px -1px;
+}

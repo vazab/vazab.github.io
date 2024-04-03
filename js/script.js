@@ -54,16 +54,16 @@ function printResultOfDiff(diffResultArray) {
 }
 
 function clearInputDates() {
-    document.getElementById("input-date1").value = '';
-    document.getElementById("input-date2").value = '';
-    document.getElementById("result-of-diff").textContent = 'result of diff';
+    document.getElementById("input-date1").value = "";
+    document.getElementById("input-date2").value = "";
+    document.getElementById("result-of-diff").textContent = "result of diff";
 }
 
 function clearAddValues() {
-    document.getElementById("input-days").value = '';
-    document.getElementById("input-hours").value = '';
-    document.getElementById("input-minutes").value = '';
-    document.getElementById("result-of-add").textContent = 'result of add';
+    document.getElementById("input-days").value = "";
+    document.getElementById("input-hours").value = "";
+    document.getElementById("input-minutes").value = "";
+    document.getElementById("result-of-add").textContent = "result of add";
 }
 
 function setCurrentDate() {
