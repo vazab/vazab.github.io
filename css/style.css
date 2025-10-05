@@ -62,7 +62,7 @@
 .datecalc {
     display: grid;
     background-color: rgb(255, 255, 255);
-    width: 512px;
+    width: 400px;
     padding: 4px 12px;
     border: 1px solid rgba(0, 0, 0, 0.25);
     
