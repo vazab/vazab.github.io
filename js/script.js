@@ -63,7 +63,7 @@ function clearAddValues() {
     document.getElementById("input-days").value = "";
     document.getElementById("input-hours").value = "";
     document.getElementById("input-minutes").value = "";
-    document.getElementById("result-of-add").textContent = "result of add";
+    document.getElementById("result-of-add").textContent = "result of sum";
 }
 
 function setCurrentDate() {
